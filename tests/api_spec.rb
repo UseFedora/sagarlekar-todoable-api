@@ -9,7 +9,7 @@ describe Todoable::Api do
         
         it "defines the 8 methods" do
             methods.each do |method|
-                expect(subject.respond_to? method.to_sym).to be_truthy
+                expect(subject.respond_to? method).to be_truthy
             end
         end
     end    
