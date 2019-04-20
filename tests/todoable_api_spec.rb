@@ -1,11 +1,11 @@
 $:.unshift File.join(File.dirname(__FILE__),'..','lib')
-require 'api'
+require 'todoable_api'
 
-describe Todoable::Api do
+describe Todoable::TodoableApi do
     
     describe "Api methods" do
         let(:methods) { %i(lists create get delete patch delete_item create_item finish_item) }
-        let(:subject) { Todoable::Api.new }
+        let(:subject) { Todoable::TodoableApi.new }
         
         it "defines the 8 methods" do
             methods.each do |method|

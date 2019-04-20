@@ -1,7 +1,7 @@
 require 'httparty'
 
 module Todoable
-    class Api
+    class TodoableApi
         include HTTParty
         base_uri 'http://todoable.teachable.tech/api'
 
