@@ -14,7 +14,8 @@ We use httparty for API calls and Rspec for testing.
 
 # Test
 `cd todoable-api`
-`rspec tests/todoable_api_spec.rb `
+
+`rspec tests/todoable_api_spec.rb`
 
 # TODO
 * Pack this as a gem
