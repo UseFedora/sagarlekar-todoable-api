@@ -41,11 +41,6 @@ module Todoable
             self.class.delete("/lists/#{id}/items/#{item_id}", :headers=>headers)  
         end
         
-      
-        def finish_item(id, item_id)
-            self.class.put("/lists/#{id}/items/#{item_id}/finish", :headers=>headers)  
-        end
-        
         private
         def headers
             {
