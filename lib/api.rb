@@ -67,12 +67,6 @@ module Todoable
             auth = {username: username, password: password }
             options = {}
             options.merge!({ basic_auth: auth })
-            headers = {
-                'Content-Type' => 'application/json', 
-                'Accept' => 'application/json'
-            }
-            options.merge!({ basic_auth: auth })
-            options.merge!({headers: headers})
             response = self.class.post('/authenticate', options)
             @token = response.parsed_response["token"]
         end
@@ -80,20 +74,5 @@ module Todoable
         def token
             @token ||= basic_auth_token
         end
-        
     end
 end
-
-api = Todoable::Api.new
-list = '{"list": {"name": "test5"}}'
-api.create(list)
-puts api.lists
-# puts api.get("478a076a-0202-44af-935d-3f13d263cfa7")
-# list2 = '{"list": {"name": "Not so urgent anymore"}}'
-# #puts api.patch("478a076a-0202-44af-935d-3f13d263cfa7", list2)
-# puts api.delete("fdc0cef5-289a-4a5b-bca4-3700ad29d30a")
-
-# item = '{"item": {"name": "Feed the cat"}}'
-# puts api.create_item("6158102f-a64a-47ae-97ed-bc6c7996f1dd", item)
-
-puts api.delete_item("6158102f-a64a-47ae-97ed-bc6c7996f1dd", "a0bdce90-f18b-45ae-af31-cdcfaa21bf53")
