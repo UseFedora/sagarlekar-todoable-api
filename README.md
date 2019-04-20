@@ -9,6 +9,12 @@ We use httparty for API calls and Rspec for testing.
 
 `gem install rspec`
 
+# Usage
+`require 'todoable_api'`
+
+# Test
+`cd todoable-api`
+`rspec tests/todoable_api_spec.rb `
 
 # TODO
 * Pack this as a gem
