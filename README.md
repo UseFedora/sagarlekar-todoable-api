@@ -10,11 +10,11 @@ We use httparty for API calls and Rspec for testing. All API endpoint wrapper me
 # Setup 
 
 ```
-gem install httparty`
+gem install httparty
 gem install rspec
 ```
 
-Set the username and password to get the authentication token. Ref http://todoable.teachable.tech/
+Set the username and password as environment variables. These are used to obtain the authentication token. Ref http://todoable.teachable.tech/
 ``` 
 export username=<username>
 export passowrd=<password> 
