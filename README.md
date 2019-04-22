@@ -1,7 +1,7 @@
 # todoable-api
 Interview Test - Ruby wrapper library for the http://todoable.teachable.tech/ API
 
-We use httparty for API calls and Rspec for testing. All API endpoint wrapper methods return the httparty response object, it has to be used accordingly.
+We use httparty for API calls and RSpec for testing. All API endpoint wrapper methods in `Todoable::TodoableApi` return the httparty response object, it has to be used accordingly.
 
 # TODO
 * Obtian new token on token expiration 
@@ -22,8 +22,10 @@ export passowrd=<password>
 ```
   
 # Usage
+```
 todoable_api = Todoable::TodoableApi.new
 todoable_api.lists
+```
 
 # Test
 ```
