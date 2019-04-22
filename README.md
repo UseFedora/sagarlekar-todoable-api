@@ -4,6 +4,7 @@ Interview Test - Ruby wrapper library for the http://todoable.teachable.tech/ AP
 We use httparty for API calls and Rspec for testing. All API endpoint wrapper methods return the httparty response object, it has to be used accordingly.
 
 # TODO
+* Obtian new token on token expiration 
 * Pack this as a gem
 * Write mocked tests for each Api method
 
